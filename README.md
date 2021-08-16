@@ -1,2 +1,2 @@
-[aa.txt](https://github.com/sunmoon91/MSMHA/files/6989188/aa.txt)
 # MSMHA
+The complete code will be made public after the paper is accepted.
