@@ -1,2 +1,2 @@
 # MSMHA
-The complete code will be made public after the paper is accepted.
+The complete code and pre-trained model will be made public after the paper is accepted.
