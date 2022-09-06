@@ -69,11 +69,10 @@ def eval():
             flag = (args.cv - 1) * 24 + ss + 1
             sd = 'maps/' + args.model + '_' + str(flag) + '.nii.gz'
 
-            if args.dims==3:
-                img = np.reshape(pred_, [256, 256, 20])
-                img = np.transpose(img, [2, 1, 0])
-            if args.dims==2:
-                img = np.reshape(pred_, [20, 256, 256])
+
+            img = np.reshape(pred_, [256, 256, 20])
+            img = np.transpose(img, [2, 1, 0])
+           
             I = sitk.GetImageFromArray(img, isVector=False)
             I.SetSpacing([1.172, 1.172, 3.5])
             sitk.WriteImage(I, sd)
