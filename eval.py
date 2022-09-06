@@ -14,7 +14,7 @@ def parse_args():
     parser.add_argument('--eval_dir', type=str, default='/home/sun/my/data/fetal/norm/', help='where training data')
     parser.add_argument('--batch_size', type=int, default=1, help='batch_size')
     parser.add_argument('--cv', type=int, default=1, help='cv')
-    parser.add_argument('--model', type=str, default='MSMHV_CNN', help='select model')
+    parser.add_argument('--model', type=str, default='MSMHA_CNN', help='select model')
     parser.add_argument('--ckpt', type=str, default='models/', help='ckpt saved path')
 
 
