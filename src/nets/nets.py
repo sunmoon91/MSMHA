@@ -44,7 +44,7 @@ def crop_and_concat4(x1, x2, x3, x4):
     return tf.concat([x1, x2, x3, x4], 4)
 
 
-def batchnorm3d(x, is_training):
+def batchnorm3d(x, is_training, name=None):
     bn = BatchNormalization()(x, training=is_training)
     return bn
 
